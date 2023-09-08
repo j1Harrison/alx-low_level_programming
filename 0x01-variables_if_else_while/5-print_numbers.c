@@ -8,15 +8,10 @@
 
 int main(void)
 {
-char i;
+int i;
 
-for (i = 'a'; i <= 'z'; i++)
+for (i = 0; i <= 10; i++)
 
-{
-if (i != 'e' && i != 'q')
-putchar(i);
-}
-
-putchar('\n');
+	printf("%d", i);
 return (0);
 }
