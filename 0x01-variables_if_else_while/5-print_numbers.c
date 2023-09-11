@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - program that prints the alphabet in lowercase and upper case
+ * main - main function
  *
  * Return: Always 0
  */
 
 int main(void)
 {
-int i;
+	int i;
 
-for (i = 0; i <= 10; i++)
+	for (i = 0 ; i < 10 ; i++)
 
-	printf("%d", i);
-return (0);
+		printf("%d", i);
+	printf("\n");
+	return (0);
 }
