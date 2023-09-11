@@ -3,7 +3,7 @@
 /**
  * main - main function
  *
- * Return: always 0
+ * Return: always (0)
  *
  */
 
@@ -12,7 +12,7 @@ int main(void)
 	int i, j;
 	int a, b, c, d;
 
-	for (i + 0; i < 100; j++)
+	for (i = 0; i < 100; i++)
 	{
 		a = i / 10;
 		b = i % 10;
