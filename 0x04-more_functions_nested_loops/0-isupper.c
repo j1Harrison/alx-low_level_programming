@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _upper - detect upper case alphabets
+ * _isupper - detect upper case alphabets
  *
  * @c: input character
  *
