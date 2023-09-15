@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print 1 to 100 fizzbuss
+ * main - print 1 to 100 and fizzbuss
  *
  * Return: 0
  */
@@ -30,7 +30,6 @@ int main(void)
 		}
 
 	}
-	printf("Buzz");
 	printf("\n");
 
 	return (0);
