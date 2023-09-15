@@ -8,21 +8,22 @@
 
 int main(void)
 {
-	long int i, n, d;
+	long number = 612852475143;
+	int inc;
 
-	n = 612852475143;
-	for (i = 1; i <= n; i++)
+	while (inc++ < number / 2)
 	{
-		if (n % i == 0)
+		if (number % inc == 0)
 		{
-			if (n == 1)
-			{
-				printf("%ld\n", i);
-				break;
-			}
-			d = n / i;
-			n = d;
+			number /= 2;
+			continue;
+		}
+		for (inc = 3; inc < number / 2; inc += 2)
+		{
+			if (number % inc == 0)
+				number /= inc;
 		}
 	}
+	printf("%ld\n", number);
 	return (0);
 }
