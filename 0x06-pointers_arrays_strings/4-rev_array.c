@@ -2,22 +2,24 @@
 
 /**
   * reverse_array - The main faunction
+  * @a: parameter one
+  * @n: parameter 2
   *
-  * @a: Function parameter
-  *
-  * @n: Function parameter
-  *
-  * Return: Always 0
   */
 
 void reverse_array(int *a, int n)
 {
-	int k, r;
+	int swap, begin, end;
 
-	for (k = 0; k < n--; k++)
+	begin = 0;
+	end = n - 1;
+
+	while (begin < end)
 	{
-	r = a[k];
-	a[k] = a[n];
-	a[n] = r;
+	swap = a[begin];
+	a[begin] = a[end];
+	a[end] = swap;
+	begin++;
+	end--;
 	}
 }
